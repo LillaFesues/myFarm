@@ -1,0 +1,28 @@
+.mdl-card {
+    margin: 20px;
+}
+
+.image-card {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../../../../assets/images/placeholder.jpg');
+    background-color: #f7f7f7;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    > .mdl-card__actions {
+        height: 52px;
+        padding: 16px;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

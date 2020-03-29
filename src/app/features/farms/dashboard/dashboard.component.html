@@ -1,0 +1,6 @@
+<h4>Animals of <b>{{ farmAndSeason.selectedFarm.name }}</b> in <b>{{ farmAndSeason.selectedSeason.name }}</b></h4>
+<app-card-container>
+    <a *ngFor="let animal of data" [routerLink]="['..', animal.type, 'details']">
+        <app-card [title]="animal.type.toUpperCase() + ': ' + animal.amount"></app-card>
+    </a>
+</app-card-container>

@@ -1,0 +1,29 @@
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Farms</span>
+        <nav *ngFor="let farm of farmsAndSeasons.farms" class="mdl-navigation">
+            <a
+                [routerLink]="['/', farm.id]"
+                [class.active]="farm.id === farmsAndSeasons.selectedFarmId"
+                class="mdl-navigation__link"
+            >
+                {{ farm.name }}
+            </a>
+        </nav>
+
+        <span class="mdl-layout-title">Seasons</span>
+        <nav *ngFor="let season of farmsAndSeasons.seasons" class="mdl-navigation">
+            <a
+                [routerLink]="['/', farmsAndSeasons.selectedFarmId, season.id]"
+                [class.active]="season.id === farmsAndSeasons.selectedSeasonId"
+                class="mdl-navigation__link"
+            >
+                {{ season.name }}
+            </a>
+        </nav>
+    </div>
+
+    <main class="mdl-layout__content">
+        <div class="page-content"><router-outlet></router-outlet></div>
+    </main>
+</div>
