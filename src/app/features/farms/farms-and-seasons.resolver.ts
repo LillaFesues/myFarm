@@ -13,7 +13,7 @@ export class FarmsAndSeasonsResolver implements Resolve<any> {
     constructor(private router: Router, private farmsAndSeasonsService: FarmsAndSeasonsDataService) {
     }
 
-    public resolve(route: ActivatedRouteSnapshot, _): Observable<any> {
+    public resolve(route: ActivatedRouteSnapshot): Observable<any> {
 
         const farmId = route.paramMap.get('farmId') ? +route.paramMap.get('farmId') : null;
         const seasonId = route.paramMap.get('seasonId') ? +route.paramMap.get('seasonId') : null;

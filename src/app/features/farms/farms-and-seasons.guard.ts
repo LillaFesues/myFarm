@@ -16,7 +16,7 @@ export class FarmsAndSeasonsGuard implements CanActivate {
     ) {
     }
 
-    public canActivate(route: ActivatedRouteSnapshot, _): Observable<boolean> {
+    public canActivate(route: ActivatedRouteSnapshot): Observable<boolean> {
 
         const farmId = route.paramMap.get('farmId') ? +route.paramMap.get('farmId') : null;
         const seasonId = route.paramMap.get('seasonId') ? +route.paramMap.get('seasonId') : null;

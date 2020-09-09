@@ -13,7 +13,7 @@ export class DetailsResolver implements Resolve<any> {
     constructor(private router: Router, private detailsDataService: DetailsDataService) {
     }
 
-    public resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<any> | Observable<never> {
+    public resolve(route: ActivatedRouteSnapshot): Observable<any> | Observable<never> {
 
         const farmId = +route.paramMap.get('farmId');
         const seasonId = +route.paramMap.get('seasonId');
