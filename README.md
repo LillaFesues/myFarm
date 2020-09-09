@@ -1,6 +1,6 @@
 # myFarm
 
-Demo application written during the Fusonic Mega Hackathon 2020. Read more about the problem and the implementation here.
+Demo application written during the Fusonic Mega Hackathon 2020. Read more about the problem and the implementation [here](https://www.fusonic.net/developers/2020/03/29/preloading-data-with-angular-router/).
 
 
 ## Development
