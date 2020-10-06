@@ -2,5 +2,3 @@
 /node_modules
 /bin
 /dist
-yarn.lock
-package-lock.json
